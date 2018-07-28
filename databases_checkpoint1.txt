@@ -1,0 +1,124 @@
+Databases: Introduction Checkpoint 1 - Kelly Garry 07.22.18
+
+1.  What data types do each of these values represent?
+
+	1.  ”A Clockwork Orange” = string 
+	2.  42 = integer
+	3.  09/02/1945 = date
+	4.  98.7 = float  
+	5.  $15.99 = currency or decimal depending on the database
+
+
+2.  Explain when a database would be used. Explain when a text file would be used.
+
+A.
+Databases are used when there is massive amounts of data which need indexing and efficient storage.  Text files can be used when the data amount to be stored is not large and it can be loaded into local memory easily.
+
+
+
+3.  Describe one difference between SQL and other programming languages.
+
+A.
+SQL uses a more human-like syntax to retrieve and manipulate data unlike high-level languages such as Java or C++ which use more complicated syntax.
+
+
+
+4.  In your own words, explain how the pieces of a database system fit together at a high level.
+
+A.
+Databases consist of the entire container which is called a table, which could be a database about a checking account.  At the top of the database is a left to right explanation of what is in the table, this is called a column, for a checking account these could be date, payee, amount and memo.  Under the column are rows which contain information about the specific entry into the database, for this checking account example, it could be July 28, $1500, landlord, rent.  These specific pieces of information are called values.
+
+
+
+5.  Explain the meaning of table, row, column, and value.
+
+A.
+Table is how a database displays data 
+Columns define what the data represents
+Rows represent a conceptual unit of information
+Values are the the piece of information that the column name describes
+
+
+
+6.  List three data types that can be used in a table.
+
+A.  Integer, string, float
+
+
+
+7.  Given this payments table, provide an English description of the following queries and include their results:
+
+     1.	SELECT date, amount
+     	FROM payments;
+
+     2.	SELECT amount
+     	FROM payments
+     	WHERE amount > 500;
+
+     3.	SELECT *
+     	FROM payments
+     	WHERE payee = 'Mega Foods';
+
+A.
+1.  This example does not include a `WHERE` clause so I don’t think it would give a result.
+
+2.  What amounts from payments are greater than 500?  This would return a table of amounts greater that 500 from all the rows in the payments table.
+
+3.  What are all of the payments made to Mega Foods?  This would return a table of all a rows values for transactions where the payee is Mega Foods.  This would include the date, amount, payee.   
+
+
+
+8.  Given this users table, write SQL queries using the following criteria and include the output:
+
+
+-The email and sign-up date for the user named DeAndre Data.
+SELECT email, signup
+FROM users
+WHERE name = ‘DeAndre Data’;
+
+
+-The user ID for the user with email 'aleesia.algorithm@uw.edu'.
+SELECT userid
+FROM users
+WHERE email = ‘aleesia.algorithm@uw.edu’;
+
+
+
+-All the columns for the user ID equal to 4.
+SELECT *
+FROM users
+WHERE userid = 4;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
